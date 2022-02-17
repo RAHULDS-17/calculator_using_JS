@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ONLINE CALCULATOR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calci.js">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  </head>
+  
+  <body style="background:linear-gradient(to left,#FFA500,#FFFF00);">
+
+    <h1 class="top1">
+      <center>
+          <div style="color:#e75480;">CALCULATOR APPLICATION</div>
+      </center>
+    </h1>
+    <a href="index.html" class="btn btn-danger" role="button">BACK</a>
+    <form name="form1" class="calci" action="calculator.html" method="POST" >
+      <input type="text" name="answer" id="display">
+      <br></br>
+    
+    
+      <input type="button" value="c" onclick="form1.answer.value=''" class="button">
+    
+    
+      <input type="button"  class= "button"value="<" onclick="form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length*1-1)" >
+      <input type="button"  class= "button"value="00" onclick="form1.answer.value+='00'">
+    
+      <input type="button"  class= "operator"value="/" onclick="form1.answer.value+='/'">
+      <br></br>
+      <input type="button" class= "button" value="7" onclick="form1.answer.value+='7'">
+      <input type="button"  class= "button"value="8" onclick="form1.answer.value+='8'">
+      <input type="button"  class= "button"value="9" onclick="form1.answer.value+='9'">
+    
+      <input type="button"  class= "operator"value="*" onclick="form1.answer.value+='*'">
+      <br></br>
+    
+    
+      <input type="button" class= "button" value="4" onclick="form1.answer.value+='4'">
+      <input type="button"  class= "button"value="5" onclick="form1.answer.value+='5'">
+    
+      <input type="button"  class= "button"value="6" onclick="form1.answer.value+='6'">
+    
+      <input type="button"  class= "operator"value="-" onclick="form1.answer.value+='-'">
+      <br></br>
+      <input type="button"  class= "button"value="1" onclick="form1.answer.value+='1'">
+      <input type="button"  class= "button"value="2" onclick="form1.answer.value+='2'">
+    
+      <input type="button"  class= "button"value="3" onclick="form1.answer.value+='3'">
+    
+      <input type="button"  class= "operator"value="+" onclick="form1.answer.value+='+'">
+      <br></br>
+    
+      <input type="button" class= "button" value="0" onclick="form1.answer.value+='0'" id="zero">
+    
+      <input type="button" class= "button" value="." onclick="form1.answer.value+='.'">
+    
+      <input type="button"  class= "operator" value="=" onclick="form1.answer.value=eval(form1.answer.value)">
+    </form>
+      
+      
+      
+      
+      
+  </body>
+</html>
